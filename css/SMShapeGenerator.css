@@ -1,0 +1,175 @@
+body{
+	background-color: black;
+}
+h3{
+	color: white;
+	font-family: "Montserrat";
+	text-align: center;
+	margin: 0;
+	margin-bottom: 5px;
+	font-size: 22px;
+	border: 1px solid white;
+	margin-left: 4px;
+	width: 590px;
+}
+
+/*Menu sections*/
+.menuSection{
+	position: absolute;
+	width: 600px;
+	left: 0;
+	background-color: #222222;
+	padding:5px 5px 5px 15px;
+}
+#blocks{	
+	top: 0;	
+	height: 770px;	
+}
+
+#colors{
+	top: 780px;
+	height: 290px;
+}
+
+#shapes{
+	height: 100px;
+	top : 1075px;				
+}	
+
+#parameters{
+	height: 100px;
+	top : 1150px;			
+}	
+
+#margins{
+	height: 125px;
+	top : 1260px;				
+}			
+
+#selection{
+	height: 150px;
+	top : 1385px;			
+}	
+
+#generation{
+	height: 150px;
+	top : 1535px;				
+}
+
+/*Menu section content*/
+/*Blocks*/
+.blockImage
+{
+	transition: transform .05s;
+	border: 2px solid black;
+	outline: none;
+}
+.blockImage:hover
+{
+	transform: scale(1.2);
+}
+/*Colors*/
+#colorContainer{
+	padding-left: 10px;
+}
+.colorSection{
+	padding-top : 5px;
+	float: left;
+}
+.colorButton{
+	width: 57.6px;
+	height: 57.6px;
+	transition: transform 0.05s;
+}
+.colorButton:hover{
+	transform: scale(1.2);
+}
+
+/*Shapes*/
+#shapeSelect{
+	width: 580px;
+	margin-left: 10px;
+	font-family: "Montserrat";
+	font-size: 18px;
+}
+
+/*Selection*/
+#selectedBlock{
+	margin-left: 10px;
+}
+
+/*General*/
+.label{
+	display: inline-block;
+	width: 150px;
+	text-align: center;
+	font-family: "Montserrat";
+	font-size: 18px;
+	color: white;
+}
+
+.input{
+	display: inline:block;
+	width: 100px;
+	font-family: "Montserrat";
+	font-size: 18px;
+}
+
+.button{
+
+	font-family: "Montserrat";
+	font-size: 18px;
+	color: white;
+	background-color: gray;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+
+.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+.custom-file-input::before {
+	color:white;
+  content: 'Load File';
+  display: inline-block;
+  font-family: "Montserrat";
+  background-color: gray;
+  border: 1px solid black;
+  border-radius: 5px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  font-size: 18px;
+  padding: 2px 4px;
+}
+
+/*Threejs*/
+canvas{
+	position: absolute;
+	top: 50px;
+	left:  670px;
+	border : 1px solid white;
+	border-radius: 5px;
+}
+
+/*Console logger*/
+#logger{
+	font-size: 18px;
+	font-family: "Montserrat";
+	color:white;
+	background-color:black;
+	border: 1px solid white;
+	border-radius: 5px;
+	position:absolute;
+	top : 1275px;
+	left : 670px;		
+	width: 	1200px;
+	height: 300px;
+	overflow-y: scroll;
+}
+
+.red {
+	color: #DF7F00;
+}

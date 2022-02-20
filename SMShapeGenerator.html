@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>SM Shape Generator</title>
+		<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+		<link href='css/SMShapeGenerator.css?rnd=2' rel='stylesheet'>
+	</head>
+	<body>		
+		<div id="menu">		
+			<div class="menuSection" id="blocks"></div>
+			<div class="menuSection" id="colors"></div>
+			<div class="menuSection" id="shapes"></div>
+			<div class="menuSection" id="parameters"></div>
+			<div class="menuSection" id="margins"></div>
+			<div class="menuSection" id="selection"></div>
+			<div class="menuSection" id="generation">
+				<h3>Generation</h3>
+				<input class='custom-file-input' id="file" type="file"/><br>
+				<input class='button' type='button' value='Generate' onclick='Generate();'>
+				<input class='button' type='button' value='Download Blueprint' onclick='CreateBlueprint();'>
+				<a class='button' href="https://drububu.com/miscellaneous/voxelizer/?out=jso">Voxelizer</a>
+				<a class='button' href="https://products.aspose.app/3d/nl/conversion/dae-to-obj">DEA to OBJ</a>
+				<br><br>
+				<h3>Scrap Mechanic Shape Generator by Metalted</h3>
+			</div>
+		</div>
+		
+		<div id='logger'></div>
+
+		<!--JSON File Downloading Anchor-->
+		<a id="downloadAnchorElem" style="display:none"></a>
+		
+		<!--Threejs-->
+		<script src="js/threejs/three.js"></script>
+		<script src="js/threejs/OrbitControls.js"></script>
+		<script src="js/threejs/OrthographicCamera.js"></script>
+		<script src="js/threejs/VoxelViewer.js"></script>
+		
+		<!--Generators-->		
+		<script src="js/gen/ShapeGenerators.js"></script>
+		<script src="js/gen/perlin.js"></script>
+		
+		<!--Program-->
+		<script src="js/program/ScrapMechanicBlueprintBuilder.js"></script>
+		<script src="js/program/PageFunctions.js"></script>
+		
+	</body>
+</html>
